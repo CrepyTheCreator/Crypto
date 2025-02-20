@@ -1,0 +1,413 @@
+.page {
+  margin: 0 auto;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 16px 0 25px;
+  align-items: center;
+  height: 56px;
+}
+
+.header-logo-contetnt {
+  display: flex;
+  gap: 7px;
+}
+
+.logo {
+  width: 36px;
+}
+
+.logo-text {
+  font-size: 18px;
+  font-weight: 700;
+  align-self: center;
+}
+
+.header-buttons {
+  display: flex;
+  gap: 17px;
+}
+
+.change-lang-btn {
+  background-color: transparent;
+  border: none;
+  text-align: center;
+}
+
+.change-lang-text {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.header-login-btn {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.headet-login-text {
+  font-family: sans-serif;
+  letter-spacing: 0.1px;
+}
+
+.main {
+  background-color: #EFF6F8;
+}
+
+.energy {
+  padding: 13px 24px 13px 23px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: 'Poppins-semi', sans-serif;
+  letter-spacing: 0.47px;
+  line-height: 1.6;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 15px;
+  margin-top: 16px;
+}
+
+.card-title-content {
+  padding: 16px 16px 13px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.energy-card-title {
+  font-size: 16px;
+  letter-spacing: 0.4px;
+}
+
+.energy-settings {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 16px 17px 16px 16px;
+  border-bottom: 1px solid #DEDEE2;
+  border-top: 1px solid #DEDEE2;
+}
+
+.addres-trans {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.addres-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-sec-title {
+  font-size: 14px;
+}
+
+.addres-input {
+  padding: 12px 50px 13px 16px;
+}
+
+
+.checkbox-add-content {
+  display: flex;
+  gap: 2px;
+  align-items: center;
+  padding-top: 4px;
+  padding-left: 1px;
+}
+
+.custom-checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.custom-checkbox+label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+.custom-checkbox+label::before {
+  content: '';
+  display: inline-block;
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: 21px;
+  height: 21px;
+  margin-right: 0.5em;
+  border: 1px solid rgba(26, 194, 0, 0.4);
+  border-radius: 0.25em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+
+.custom-checkbox:checked+label::before {
+  border-color: #1AC200;
+  background-color: #1AC200;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+}
+
+.custom-checkbox:not(:disabled):not(:checked)+label:hover::before {
+  border-color: rgba(26, 194, 0, 0.4);
+}
+
+.custom-checkbox:disabled+label::before {
+  background-color: rgba(26, 194, 0, 0.4);
+}
+
+.checkbox-text {
+  font-size: 14px;
+  letter-spacing: 0.25px;
+}
+
+.trans-content {
+  padding-top: 1px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.input-trans-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 10px;
+}
+
+.input-transaction {
+  padding: 13px 16px;
+  text-align: center;
+  max-width: 187px;
+}
+
+.trans-buttons {
+  border-radius: 5px;
+  outline: 1px solid #DEDEE2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.trans-btn {
+  background-color: transparent;
+  border: none;
+  font-size: 25px;
+  padding: 0;
+}
+
+.energy-shtyk {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  padding-top: 6px;
+}
+
+.left-border {
+  border-left: 1px solid #DEDEE2;
+}
+
+.shtyk-input-content {
+  display: grid;
+  grid-template-columns: 77% 23%;
+  padding-right: 12px;
+}
+
+.input {
+  background-color: transparent;
+  border: none;
+  border-radius: 5px;
+  outline: 1px solid #DEDEE2;
+  font-size: 14px;
+  color: #76767A;
+  position: relative;
+}
+
+.input:hover {
+  color: #000;
+}
+
+.input:active {
+  color: #000;
+}
+
+.shtyk-input {
+  font-size: 14px;
+  padding: 11px 0 10px 16px;
+  color: #76767A;
+  border-radius: 5px 0 0 5px;
+}
+
+.shtyk-btn {
+  border: none;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 5px 5px 0;
+  outline: 1px solid #1AC200;
+}
+
+.checkbox-energy {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  padding-top: 20px;
+}
+
+.energy-subtext {
+  font-size: 14px;
+  color: #76767A;
+}
+
+.arend {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.arend-buttons {
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  outline: 1px solid #DEDEE2;
+  padding: 4px;
+}
+
+.arend-btn {
+  padding: 6px 0 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: transparent;
+}
+
+.arend-btn-active {
+  background-color: #1AC200;
+  color: #fff;
+}
+
+.btn-arend-text {
+  font-size: 14px;
+}
+
+.standart-price {
+  display: flex;
+  flex-direction: column;
+  padding-top: 14px;
+}
+
+.standart-text {
+  font-size: 14px;
+  letter-spacing: 0.3px;
+}
+
+.standart-number {
+  text-decoration: line-through;
+}
+
+.energybuy {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 20px 16px 20px;
+}
+
+.text-enerbuy-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-enerbuy {
+  font-size: 14px;
+}
+
+.text-enerbuy-accent {
+  font-size: 20px;
+  font-family: 'Poppins-bold';
+}
+
+.energybuy-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.energybuy-btn {
+  padding: 12px 0;
+  font-size: 15px;
+  border-radius: 5px;
+  border: none;
+  background-color: transparent;
+}
+
+.energybuy-btn-active {
+  background-color: #1AC200;
+  color: #fff;
+}
+
+.stacking {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 0 24px 22px 23px;
+}
+
+.stacking-title {
+  letter-spacing: 0.65px;
+  line-height: 1.5;
+  font-family: 'Poppins-bold', sans-serif;
+  font-weight: 700;
+}
+
+.stacking-card-list {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.stacking-card {
+  display: flex;
+  gap: 12px;
+  max-height: 94px;
+  padding: 10px 12px 22px;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+.stacking-card-img {
+  object-fit: cover;
+}
+
+.stacking-card-text {
+  line-height: 1.38;
+  letter-spacing: 0.45px;
+}
+
+.input-content {
+  position: relative;
+}
+
+.clear-button {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  bottom: 10px;
+  right: 15px;
+  display: none;
+}
+
+.energy-clear {
+  bottom: 8px;
+  right: 90px;
+  display: block;
+}

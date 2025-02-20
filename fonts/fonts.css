@@ -1,0 +1,25 @@
+/* В этом файле вы импортируете все шрифты для сайта. Один из них вариативный и требует особенной настройки */
+@font-face {
+  font-family: 'Poppins-bold';
+  src:
+    local('Poppins'),
+    url('../fonts/Poppins/Poppins Bold.ttf');
+    font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src:
+    local('Poppins'),
+        url('../fonts/Poppins/Poppins Regular.ttf');
+    font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Poppins-semi';
+  src:
+    local('Poppins'),
+      url('../fonts/Poppins/Poppins SemiBold Regular.ttf');
+    font-weight: 500;
+}
+

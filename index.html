@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>USDt</title>
+    <link rel="icon" href="./svg/favicon.svg">
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link rel="stylesheet" href="./styles/variables.css" />
+    <link rel="stylesheet" href="./styles/globals.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/animations.css" />
+  </head>
+  <body class="page">
+    <header class="header">
+      <div class="header-logo-contetnt">
+        <img src="./svg/favicon.svg" alt="Логотип" class="logo">
+        <span class="logo-text">EcoForce</span>
+      </div>
+      <div class="header-buttons">
+        <button class="change-lang-btn">
+          <span class="change-lang-text">ru</span>
+        </button>
+        <button class="header-login-btn">
+          <img src="./svg/LogIn.svg">
+          <span class="headet-login-text">Login</span>
+        </button>
+      </div>
+    </header>
+    <main class="main">
+      <section class="energy"> 
+        <h2 class="energy-title title">Сохрани 52% на комиссии при отправке USDT trc20</h2>
+        <div class="card">
+          <div class="card-title-content">
+            <h2 class="energy-card-title">Купить энергию</h2>
+            <img src="./svg/question.svg" alt="Иконка вопроса" class="card-question">
+          </div>
+          <div class="energy-settings">
+            <div class="addres-trans input-content">
+              <div class="addres-content">
+                <span class="card-sec-title">Адрес TRON</span>
+                <img src="./svg/vuesax/linear/vuesax/linear/document-forward.svg">
+              </div>
+              <input type="text" class="addres-input input" placeholder="THQy83....">
+              <button class="clear-button">
+                <img src="./svg/clear-btn.svg">
+              </button>
+            </div>
+            <div class="checkbox-add-content">
+              <input type="checkbox" id="Add-1trx" class="custom-checkbox" checked value="yes">
+              <label for="Add-1trx"></label>
+              <p class="checkbox-text">Добавить активацию за 1 TRX</p>
+            </div>
+            <div class="trans-content">
+              <h2 class="card-sec-title">Транзакций</h2>
+              <div class="input-trans-content">
+                <input type="number" id="transaction" class="input-transaction input" value="20">
+                <div class="trans-buttons">
+                  <button class="trans-btn" id="trans-minus">
+                    <span>-</span>
+                  </button>
+                  <button class="trans-btn left-border" id="trans-plus">
+                    <span>+</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="energy-shtyk">
+              <h2 class="energy-card-title">Количество энергии</h2>
+              <div class="shtyk-input-content input-content">
+                <input type="number" class="shtyk-input input" value="60000">
+                <button class="clear-button energy-clear">
+                  <img src="./svg/clear-btn.svg">
+                </button>
+                <button class="shtyk-btn">
+                  <img src="./svg/calculator-one.svg" alt="Калькулятор">
+                </button>
+              </div>
+              <div class="checkbox-energy">
+                <input type="checkbox" class="custom-checkbox" id="use-energy" checked>
+                <label for="use-energy"></label>
+                <span class="checkbox-text">Использовать свою энергию</span>
+              </div>
+              <span class="energy-subtext">Будет использовано <span id="energy-score">153 000</span></span>
+            </div>
+            <div class="arend">
+              <h2 class="card-sec-title">Срок арнеды</h2>
+              <div class="arend-buttons">
+                <button class="arend-btn arend-btn-active">
+                  <span class="btn-arend-text">Час</span>
+                </button>
+                <button class="arend-btn">
+                  <span class="btn-arend-text">День</span>
+                </button>
+                <button class="arend-btn">
+                  <span class="btn-arend-text">Неделя</span>
+                </button>
+              </div>
+              <div class="standart-price">
+                <span class="standart-text">Обычная стоимость</span>
+                <span class="standart-number"><span id="stand-price">28.69</span> TRX</span>
+              </div>
+            </div>
+          </div>
+          <div class="energybuy">
+            <div class="energybuy-text-content">
+              <div class="text-enerbuy-content">
+                <span class="text-enerbuy">Стоимость c EcoForce</span>
+                <span class="text-enerbuy-accent"><span>24.83</span> TRX</span>
+              </div>
+              <span class="text-enerbuy">Экономия: <span id="econom-procent">52%</span> ~ <span id="econom-dolla">3.12</span> $</span>
+            </div>
+            <div class="energybuy-buttons">
+              <button class="energybuy-btn energybuy-btn-active">Купить энергию</button>
+              <button class="energybuy-btn">Инструкция</button>
+            </div>
+          </div>
+      </section>
+      <section class="stacking">
+        <h2 class="stacking-title title">
+          Стейкинг с пассивным доходом 22% годовых
+        </h2>
+        <ul class="stacking-card-list">
+          <li class="stacking-card">
+            <img src="./images/flash.svg" alt="" class="stacking-card-img">
+            <p class="stacking-card-text">
+              Возможность использовать минимальную сумму для накопления энергии.
+            </p>
+          </li>
+          <li class="stacking-card">
+            <img src="./images/locker-.svg" alt="" class="stacking-card-img">
+            <p class="stacking-card-text">
+              Использование энергии для своих нужд.
+            </p>
+          </li>
+          <li class="stacking-card">
+            <img src="./images/dollar.svg" alt="" class="stacking-card-img">
+            <p class="stacking-card-text">
+              Продажа энергии обратно сервису для моментального получения дохода.
+            </p>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
