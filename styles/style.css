@@ -770,7 +770,7 @@
 }
 
 .menu-list-open {
-  transform: translateY(0);
+  transform: translateY(2px);
 }
 
 .menu-text-li {
