@@ -1,1 +1,1 @@
-https://github.com/CrepyTheCreator/zakrivayuschiy-teg-f
+Сайт создан исключительно в целях показать умения :)
