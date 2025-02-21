@@ -80,3 +80,24 @@ const dropdownBtn = document.querySelector('.dropdown-btn');
 
         slider.addEventListener('input', updateProgress);
         updateProgress(); // Инициализация
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const menuPhoneBtn = document.getElementById("menu-phone");
+    const menuListBtn = document.querySelector(".menu-list-btn");
+    const menuList = document.querySelector(".menu-list");
+    const menuListBack = document.querySelector(".menu-list-back");
+
+    function toggleMenu() {
+        menuList.classList.toggle("menu-list-open");
+        menuListBack.classList.toggle("menu-list-back-active");
+    }
+
+    function closeMenu() {
+        menuList.classList.remove("menu-list-open");
+        menuListBack.classList.remove("menu-list-back-active");
+    }
+
+    menuPhoneBtn.addEventListener("click", toggleMenu);
+    menuListBtn.addEventListener("click", closeMenu);
+});
