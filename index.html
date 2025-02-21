@@ -140,7 +140,47 @@
             </p>
           </li>
         </ul>
+        <div class="card card-earn">
+          <h2 class="title-earn">Калькулятор расчета доходности</h2>
+          <div class="stacking-calc">
+            <div class="stacking-input-content input">
+              <input type="number" class="stacking-input" id="stacking-value" value="2000">
+              <div class="dropdown">
+                <button class="dropdown-btn">TRX</button>
+                <img src="./svg/service-list.svg" class="drop-svg">
+                <ul class="dropdown-menu">
+                  <li class="selected">TRX</li>
+                  <li>Dollar</li>
+                </ul>
+              </div>
+            </div>
+            <div class="stacking-range-content">
+              <input type="range" class="stacking-range" id="stacking-range" max="1000" step="10" min="0">
+              <span class="range-price">~ <span id="range-value">500</span> $</span>
+            </div>
+          </div>
+          <div class="stacking-list">
+            <ul class="stacking-tab-list">
+              <li class="stacking-tab-text tab-accent">Период</li>
+              <li class="stacking-tab-text tab-accent">Энергия</li>
+              <li class="stacking-tab-text tab-accent">TRX</li>
+              <li class="stacking-tab-text">Ежедневно</li>
+              <li class="stacking-tab-text">22 400</li>
+              <li class="stacking-tab-text">1,2 ~ 0,28$</li>
+              <li class="stacking-tab-text">За месяц</li>
+              <li class="stacking-tab-text">672 000</li>
+              <li class="stacking-tab-text">34 ~ 8,4$</li>
+              <li class="stacking-tab-text">За год</li>
+              <li class="stacking-tab-text">8 176 000</li>
+              <li class="stacking-tab-text">408 ~ 102,2$</li>
+            </ul>
+          </div>
+          <button class="stacking-btn">
+            <span class="stacking-btn-text">Начать стейкинг</span>
+          </button>
+        </div>
       </section>
+      
     </main>
     <script src="./scripts/script.js"></script>
   </body>
