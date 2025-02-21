@@ -437,6 +437,7 @@
   background-color: transparent;
   border: none;
   padding: 10px 0;
+  max-width: 142px;
 }
 
 .dropdown {
