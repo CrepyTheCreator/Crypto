@@ -696,7 +696,7 @@
   padding: 16px 0;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 18px;
 }
 
 .support-text {
@@ -709,6 +709,12 @@
 
 .support-tg:hover {
   border-bottom: 1px solid #fff;
+}
+
+.footer-low {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
 }
 
 .copyright {
@@ -999,6 +1005,7 @@
 
   .footer-low {
     display: flex;
+    flex-direction: row;
     gap: 24px;
   }
 
