@@ -2,6 +2,7 @@
   margin: 0 auto;
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
+  background-color: #EFF6F8;
 }
 
 .header {
@@ -10,6 +11,7 @@
   padding: 0 16px 0 25px;
   align-items: center;
   height: 56px;
+  background-color: #fff;
 }
 
 .header-logo-contetnt {
@@ -55,10 +57,6 @@
 .headet-login-text {
   font-family: sans-serif;
   letter-spacing: 0.1px;
-}
-
-.main {
-  background-color: #EFF6F8;
 }
 
 .energy {
@@ -344,7 +342,7 @@
 .energybuy-btn {
   padding: 12px 0;
   font-size: 15px;
-  border-radius: 5px;
+  border-radius: 10px;
   border: none;
   background-color: transparent;
 }
@@ -384,6 +382,10 @@
   border-radius: 15px;
 }
 
+.stacking-card-pc {
+  display: none;
+}
+
 .stacking-card-img {
   object-fit: cover;
 }
@@ -408,12 +410,16 @@
 
 .energy-clear {
   bottom: 8px;
-  right: 90px;
+  right: 30%;
   display: block;
 }
 
+.earn {
+  padding: 0 24px 24px;
+}
+
 .card-earn {
-  margin-top: 7px;
+  margin-top: 0;
   display: flex;
   flex-direction: column;
   gap: 17px;
@@ -611,6 +617,7 @@
   font-size: 16px;
   text-align: center;
   letter-spacing: 0.4px;
+  font-family: 'Poppins-semi', sans-serif;
 }
 
 .about-who {
@@ -765,7 +772,7 @@
   bottom: 57px;
   border-radius: 20px 20px 0 0;
   z-index: -1;
-  transform: translateY(320px);
+  transform: translateY(340px);
   transition: transform .3s ease;
 }
 
@@ -800,4 +807,215 @@
   position: absolute;
   right: 8px;
   top: 12px;
+}
+
+.header-nav {
+  display: none;
+}
+
+@media (width >= 1024px) {
+  .header-nav {
+    display: flex;
+    gap: 50px;
+  }
+
+  .header-nav .navig-text {
+    color: #000;
+  }
+
+  .main {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas: 
+    'sec-energy sec-energy sec-energy sec-earn sec-earn'
+    'sec-stacking sec-stacking sec-stacking sec-stacking sec-stacking'
+    'sec-about sec-about sec-about sec-about sec-about';
+    max-width: 1210px;
+    margin: 0 auto;
+  }
+  
+  .header {
+    max-width: 1210px;
+    margin: 0 auto;
+  }
+
+  .earn {
+    padding: 60px 24px 0 0;
+  }
+
+  .card {
+    max-width: 660px;
+  }
+
+  .energy-settings {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas: 
+    'addres addres trans'
+    'arend arend energy';
+    gap: 10px;
+    padding: 16px 23px 0 25px;
+  }
+
+  .checkbox-add-content,
+  .checkbox-energy,
+  .energy-subtext,
+  .energybuy-btn,
+  .menu-phone {
+    display: none;
+  }
+
+  .energybuy-btn-active {
+    display: block;
+  }
+
+  .energybuy-text-content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .text-enerbuy-content {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .text-enerbuy {
+    font-size: 16px;
+  }
+
+  .text-enerbuy-accent {
+    font-size: 16px;
+  }
+
+  .energy-shtyk {
+    padding: 0;
+  }
+
+  .input-trans-content {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .input-transaction {
+    max-width: 85px;
+  }
+
+  .arend-buttons {
+    max-width: 253px;
+  }
+
+  .arend-btn-active {
+    background-color: transparent;
+    outline: 1px solid #1AC200;
+    color: #1AC200;
+  }
+
+  .card-sec-title,
+  .energy-card-title {
+    font-weight: 400;
+  }
+
+  .title-earn {
+    padding: 25px 40px;
+  }
+  
+  .stacking-calc {
+    padding: 16px 16px 0;
+  }
+
+  .stacking-list {
+    margin: 0 30px;
+  }
+
+  .stacking-btn {
+    margin: 0 30px 52px;
+  }
+
+  .card-title-content {
+    padding: 24px 35px 24px 40px;
+  }
+
+  .standart-price {
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .energybuy {
+    padding: 10px 24px 42px 26px;
+  }
+
+  .stacking-card-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stacking-card-pc {
+    display: flex;
+  }
+
+  .about-video-content {
+    align-items: center;
+    padding: 64px 0;
+  }
+
+  .about-video {
+    width: 790px;
+  }
+
+  .about-video-title {
+    font-size: 22px;
+  }
+
+  .about-who-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .about-who-card {
+    padding: 40px;
+  }
+
+  .stacking-card {
+    padding: 25px 20px;
+  }
+
+  .footer {
+    padding: 0 10px;
+  }
+
+  .footer-main {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0 24px;
+    max-width: 1210px;
+    margin: 0 auto;
+  }
+  
+  .footer-navigation {
+    flex-direction: row;
+  }
+
+  .footer-low {
+    display: flex;
+    gap: 24px;
+  }
+
+  .footer-police {
+    flex-direction: row;
+    text-wrap: nowrap;
+    padding: 24px 0 42px;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1210px;
+    margin: 0 auto;
+  }
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  } 
+
 }

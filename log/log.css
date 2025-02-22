@@ -1,0 +1,100 @@
+.log-info {
+  padding: 15px 24px;
+}
+
+.log-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.log-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 6px 0;
+  position: relative;
+  min-height: 47px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.more-btn {
+  position: absolute;
+  right: 5px;
+  top: 12px;
+}
+
+.log-card-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.log-content {
+  display: flex;
+  gap: 6px;
+  padding: 0 29px 0 10px;
+}
+
+.user-content {
+  padding-top: 3px;
+}
+
+.time-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 52px;
+}
+
+.center-info {
+  padding-left: 40px;
+}
+
+.name-info {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.45);
+}
+
+.number-info {
+  font-size: 12px;
+  color: #1AC200;
+}
+
+.log-svg {
+  width: 30px;
+}
+
+.log-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.text-balance {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.log-buttons {
+  padding: 0 10px;
+  display: none;
+  gap: 24px;
+  justify-content: space-between;
+}
+
+.active-log {
+  display: flex;
+}
+
+.log-btn {
+  background-color: transparent;
+  border-radius: 10px;
+  border: 1px solid #1AC200;
+  width: 100%;
+}
+
+.log-btn-text {
+  color: #1AC200;
+}

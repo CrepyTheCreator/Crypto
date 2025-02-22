@@ -4,17 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>USDt</title>
-    <link rel="icon" href="./svg/favicon.svg">
-    <link rel="stylesheet" href="./fonts/fonts.css" />
-    <link rel="stylesheet" href="./styles/variables.css" />
-    <link rel="stylesheet" href="./styles/globals.css" />
-    <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="stylesheet" href="./styles/animations.css" />
+    <link rel="icon" href="/svg/favicon.svg">
+    <link rel="stylesheet" href="/fonts/fonts.css" />
+    <link rel="stylesheet" href="/styles/variables.css" />
+    <link rel="stylesheet" href="/styles/globals.css" />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="/styles/animations.css" />
+    <link rel="stylesheet" href="./log.css">
   </head>
   <body class="page">
     <header class="header">
       <div class="header-logo-contetnt">
-        <img src="./svg/favicon.svg" alt="Логотип" class="logo">
+        <img src="/svg/favicon.svg" alt="Логотип" class="logo">
         <span class="logo-text">EcoForce</span>
       </div>
       <ul class="footer-navigation header-nav">
@@ -41,29 +42,96 @@
         <button class="change-lang-btn">
           <span class="change-lang-text">ru</span>
         </button>
-        <button class="header-login-btn" onclick="window.location.href='./log/index.html'">
-          <img src="./svg/LogIn.svg">
-          <span class="headet-login-text">Login</span>
+        <button class="header-login-btn">
+          <img src="/svg/user.svg">
         </button>
       </div>
     </header>
+    <section class="log-info">
+      <ul class="log-list">
+        <li class="log-card">
+          <div class="log-content user-content">
+            <img src="/svg/user.svg" class="log-svg">
+            <div class="log-text">
+              <span>Баланс TRX:</span>
+              <div class="log-card-info">
+                <span class="text-balance">12 345.12</span>
+              </div>
+            </div>
+          </div>
+          <div class="log-buttons">
+            <button class="log-btn">
+              <span class="log-btn-text">Вывести</span>
+            </button>
+            <button class="log-btn">
+              <span class="log-btn-text">Внести</span>
+            </button>
+          </div>
+          <img src="/svg/more.svg" class="more-btn">
+        </li>
+        <li class="log-card">
+          <div class="log-content">
+            <img src="/svg/stacking.svg" class="log-svg">
+            <div class="log-text">
+                <span>Стейкинг TRX:</span>
+                <div class="time-info">
+                  <span class="name-info">APR</span>
+                  <span class="number-info">22%</span>
+                </div>
+              <span class="text-balance">3 500</span>
+            </div>
+          </div>
+          <div class="log-buttons">
+            <button class="log-btn">
+              <span class="log-btn-text">Вывести</span>
+            </button>
+            <button class="log-btn">
+              <span class="log-btn-text">Внести</span>
+            </button>
+          </div>
+          <img src="/svg/more.svg" class="more-btn">
+        </li>
+        <li class="log-card">
+          <div class="log-content">
+            <img src="/svg/log-energy.svg" class="log-svg">
+            <div class="log-text">
+                <span>Энергия:</span>
+                <div class="time-info center-info">
+                  <span class="name-info">24h</span>
+                  <span class="number-info">+668</span>
+                </div>
+              <span class="text-balance">13 832</span>
+            </div>
+          </div>
+          <div class="log-buttons">
+            <button class="log-btn">
+              <span class="log-btn-text">Вывести</span>
+            </button>
+            <button class="log-btn">
+              <span class="log-btn-text">Внести</span>
+            </button>
+          </div>
+          <img src="/svg/more.svg" class="more-btn">
+        </li>
+      </ul>
+    </section>
     <main class="main">
       <section class="energy" style="grid-area: sec-energy;"> 
         <h2 class="energy-title title">Сохрани 52% на комиссии при отправке USDT trc20</h2>
         <div class="card">
           <div class="card-title-content">
             <h2 class="energy-card-title">Купить энергию</h2>
-            <img src="./svg/question.svg" alt="Иконка вопроса" class="card-question">
+            <img src="/svg/question.svg" alt="Иконка вопроса" class="card-question">
           </div>
           <div class="energy-settings">
             <div class="addres-trans input-content" style="grid-area: addres;">
               <div class="addres-content">
                 <span class="card-sec-title">Адрес TRON</span>
-                <img src="./svg/vuesax/linear/vuesax/linear/document-forward.svg">
+                <img src="/svg/vuesax/linear/vuesax/linear/document-forward.svg">
               </div>
               <input type="text" class="addres-input input" placeholder="THQy83....">
               <button class="clear-button">
-                <img src="./svg/clear-btn.svg">
+                <img src="/svg/clear-btn.svg">
               </button>
             </div>
             <div class="checkbox-add-content">
@@ -90,10 +158,10 @@
               <div class="shtyk-input-content input-content">
                 <input type="number" class="shtyk-input input" value="60000">
                 <button class="clear-button energy-clear">
-                  <img src="./svg/clear-btn.svg">
+                  <img src="/svg/clear-btn.svg">
                 </button>
                 <button class="shtyk-btn">
-                  <img src="./svg/calculator-one.svg" alt="Калькулятор">
+                  <img src="/svg/calculator-one.svg" alt="Калькулятор">
                 </button>
               </div>
               <div class="checkbox-energy">
@@ -142,37 +210,37 @@
         </h2>
         <ul class="stacking-card-list">
           <li class="stacking-card">
-            <img src="./images/flash.svg" alt="" class="stacking-card-img">
+            <img src="/images/flash.svg" alt="" class="stacking-card-img">
             <p class="stacking-card-text">
               Возможность использовать минимальную сумму для накопления энергии.
             </p>
           </li>
           <li class="stacking-card stacking-card-pc">
-            <img src="./images/flash.svg" alt="" class="stacking-card-img">
+            <img src="/images/flash.svg" alt="" class="stacking-card-img">
             <p class="stacking-card-text">
               Возможность использовать минимальную сумму для накопления энергии.
             </p>
           </li>
           <li class="stacking-card">
-            <img src="./images/locker-.svg" alt="" class="stacking-card-img">
+            <img src="/images/locker-.svg" alt="" class="stacking-card-img">
             <p class="stacking-card-text">
               Использование энергии для своих нужд.
             </p>
           </li>
           <li class="stacking-card stacking-card-pc">
-            <img src="./images/locker-.svg" alt="" class="stacking-card-img">
+            <img src="/images/locker-.svg" alt="" class="stacking-card-img">
             <p class="stacking-card-text">
               Использование энергии для своих нужд.
             </p>
           </li>
           <li class="stacking-card">
-            <img src="./images/dollar.svg" alt="" class="stacking-card-img">
+            <img src="/images/dollar.svg" alt="" class="stacking-card-img">
             <p class="stacking-card-text">
               Продажа энергии обратно сервису для моментального получения дохода.
             </p>
           </li>
           <li class="stacking-card stacking-card-pc">
-            <img src="./images/dollar.svg" alt="" class="stacking-card-img">
+            <img src="/images/dollar.svg" alt="" class="stacking-card-img">
             <p class="stacking-card-text">
               Продажа энергии обратно сервису для моментального получения дохода.
             </p>
@@ -187,7 +255,7 @@
               <input type="number" class="stacking-input" id="stacking-value" value="2000">
               <div class="dropdown">
                 <button class="dropdown-btn">TRX</button>
-                <img src="./svg/service-list.svg" class="drop-svg">
+                <img src="/svg/service-list.svg" class="drop-svg">
                 <ul class="dropdown-menu">
                   <li class="selected">TRX</li>
                   <li>Dollar</li>
@@ -223,7 +291,7 @@
       <section class="about" style="grid-area: sec-about;">
         <div class="about-video-content">
           <h2 class="about-video-title">Посмотрите видео о возможностях EcoForce</h2>
-          <video poster="./images/video-poster.png" class="about-video">
+          <video poster="/images/video-poster.png" class="about-video">
             <source src="#" type="video/mp4">
           </video>
         </div>
@@ -231,7 +299,7 @@
           <h2 class="about-who-title">Для кого может быть полезен этот сервис:</h2>
           <ul class="about-who-list">
             <li class="about-who-card">
-              <img src="./svg/people_icon.svg">
+              <img src="/svg/people_icon.svg">
               <div class="who-card-text-content">
                 <h3 class="who-card-title">Пользователи сети Tron</h3>
                 <p class="who-card-text">Если вы регулярно отправляете USDT или другие токены в сети Tron, 
@@ -241,21 +309,21 @@
               </div>
             </li>
             <li class="about-who-card">
-              <img src="./svg/line_icon.svg">
+              <img src="/svg/line_icon.svg">
               <div class="who-card-text-content">
                 <h3 class="who-card-title">Инвесторы с минимальным капиталом</h3>
                 <p class="who-card-text">Даже небольшие вложения в стейкинг позволят ежедневно накапливать энергию. Вы сможете использовать её для экономии на транзакциях или получать доход, продавая её обратно.</p>
               </div>
             </li>
             <li class="about-who-card">
-              <img src="./svg/api_icon.svg">
+              <img src="/svg/api_icon.svg">
               <div class="who-card-text-content">
                 <h3 class="who-card-title">Крипто-процессинговые сервисы (через API)</h3>
                 <p class="who-card-text">Для сервисов, обрабатывающих большой объём транзакций в сети Tron, использование энергии через наш сервис позволит снизить затраты на комиссии. </p>
               </div>
             </li>
             <li class="about-who-card">
-              <img src="./svg/energy_icon.svg">
+              <img src="/svg/energy_icon.svg">
               <div class="who-card-text-content">
                 <h3 class="who-card-title">Обменные пункты криптовалют (через API)</h3>
                 <p class="who-card-text">Онлайн-обменники могут арендовать энергию для оптимизации издержек. </p>
@@ -268,7 +336,7 @@
     <footer class="footer">
       <div class="footer-main">
         <div class="footer-logo-content">
-          <img src="./svg/logo__final.svg">
+          <img src="/svg/logo__final.svg">
           <span class="logo-text footer-logo-text">EcoForce</span>
         </div>
         <ul class="footer-navigation">
@@ -303,15 +371,15 @@
     <menu class="menu-phone">
       <div class="menu-list-pos">
         <button class="menu-phone-btn">
-          <img src="./svg/flash.svg">
+          <img src="/svg/flash.svg">
           <span class="phone-btn-text">Купить энергию</span>
         </button>
         <button class="menu-phone-btn">
-          <img src="./svg/coin.svg">
+          <img src="/svg/coin.svg">
           <span class="phone-btn-text">Стейкинг</span>
         </button>
         <button class="menu-phone-btn">
-          <img src="./svg/activity.svg">
+          <img src="/svg/activity.svg">
           <span class="phone-btn-text">Финансы</span>
         </button>
         <button class="menu-phone-btn" id="menu-phone">
@@ -342,12 +410,12 @@
             <span class="menu-text">О нас</span>
           </li>
           <button class="menu-list-btn">
-            <img src="./svg/close_24.svg" alt="">
+            <img src="/svg/close_24.svg" alt="">
           </button>
         </ul>
         <div class="menu-list-back"></div>
       </div>
     </menu>
-    <script src="./scripts/script.js"></script>
+    <script src="/scripts/script.js"></script>
   </body>
 </html>
