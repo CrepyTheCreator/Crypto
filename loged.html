@@ -45,7 +45,12 @@
         <button class="header-login-btn">
           <img src="./svg/user.svg">
         </button>
+        <div class="login-logout" onclick="window.location.href='./index.html'">
+          <img src="./svg/logout.svg">
+          <span>Выход</span>
+        </div>
       </div>
+      <div class="logout-backdrops"></div>
     </header>
     <section class="log-info">
       <ul class="log-list">
@@ -203,6 +208,106 @@
               <button class="energybuy-btn">Инструкция</button>
             </div>
           </div>
+      </section>
+      <section class="operation">
+        <h2 class="card-title-content oper-title">История операций</h2>
+        <ul class="operation-list">
+          <li class="operation-card">
+            <span class="card-stroke-text">
+              Операция 
+              <span class="user-trans">#1</span>
+            </span>
+            <span class="card-stroke-text">
+              Дата: 
+              <span class="user-trans">25.01.2025</span>
+            </span>
+            <span class="card-stroke-text">
+              Адрес: 
+              <span class="user-trans">TM1zzNDZD2DPASbKcgdVoTYhfmYgtfwx9R</span>
+            </span>
+            <span class="card-stroke-text">
+              Энергия: 
+              <span class="user-trans">153,000</span>
+            </span>
+            <span class="card-stroke-text">
+              Срок: 
+              <span class="user-trans">1 день</span>
+            </span>
+            <span class="card-stroke-text">
+              Статус: 
+              <span class="user-trans">Делегировано</span>
+            </span>
+            <span class="card-stroke-text">
+              Стоимость: 
+              <span class="user-trans">3 TRX</span>
+            </span>
+          </li>
+          <li class="operation-card">
+            <span class="card-stroke-text">
+              Операция 
+              <span class="user-trans">#2</span>
+            </span>
+            <span class="card-stroke-text">
+              Дата: 
+              <span class="user-trans">25.01.2025</span>
+            </span>
+            <span class="card-stroke-text">
+              Адрес: 
+              <span class="user-trans">TM1zzNDZD2DPASbKcgdVoTYhfmYgtfwx9R</span>
+            </span>
+            <span class="card-stroke-text">
+              Энергия: 
+              <span class="user-trans">153,000</span>
+            </span>
+            <span class="card-stroke-text">
+              Срок: 
+              <span class="user-trans">1 день</span>
+            </span>
+            <span class="card-stroke-text">
+              Статус: 
+              <span class="user-trans">Делегировано</span>
+            </span>
+            <span class="card-stroke-text">
+              Стоимость: 
+              <span class="user-trans">3 TRX</span>
+            </span>
+          </li>
+          <li class="operation-card">
+            <span class="card-stroke-text">
+              Операция 
+              <span class="user-trans">#3</span>
+            </span>
+            <span class="card-stroke-text">
+              Дата: 
+              <span class="user-trans">25.01.2025</span>
+            </span>
+            <span class="card-stroke-text">
+              Адрес: 
+              <span class="user-trans">TM1zzNDZD2DPASbKcgdVoTYhfmYgtfwx9R</span>
+            </span>
+            <span class="card-stroke-text">
+              Энергия: 
+              <span class="user-trans">153,000</span>
+            </span>
+            <span class="card-stroke-text">
+              Срок: 
+              <span class="user-trans">1 день</span>
+            </span>
+            <span class="card-stroke-text">
+              Статус: 
+              <span class="user-trans">Делегировано</span>
+            </span>
+            <span class="card-stroke-text">
+              Стоимость: 
+              <span class="user-trans">3 TRX</span>
+            </span>
+          </li>
+          <button class="operation-more-btn">
+            <span>
+              Показать еще
+            </span>
+          </button>
+        </ul>
       </section>
       <section class="stacking" style="grid-area: sec-stacking;">
         <h2 class="stacking-title title">
@@ -417,5 +522,6 @@
       </div>
     </menu>
     <script src="./scripts/script.js"></script>
+    <script src="./scripts/log.js"></script>
   </body>
 </html>

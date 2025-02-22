@@ -101,17 +101,3 @@ document.addEventListener("DOMContentLoaded", function () {
     menuPhoneBtn.addEventListener("click", toggleMenu);
     menuListBtn.addEventListener("click", closeMenu);
 });
-
-
-document.querySelectorAll('.log-card').forEach(card => {
-  card.addEventListener('click', (event) => {
-      // Находим блок с кнопками внутри нажатой карточки
-      const buttons = card.querySelector('.log-buttons');
-
-      // Переключаем только в текущей карточке
-      buttons.classList.toggle('active-log');
-
-      // Останавливаем всплытие, чтобы не срабатывали клики на родительских элементах
-      event.stopPropagation();
-  });
-});

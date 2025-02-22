@@ -1,3 +1,35 @@
+.header {
+  position: relative;
+}
+
+.header-buttons {
+  position: relative;
+}
+
+.login-logout {
+  position: absolute;
+  top: 40px;
+  display: none;
+  gap: 5px;
+  right: 10px;
+  color: #000;
+  background-color: #fff;
+  padding: 14px 50px 14px 10px;
+  border-radius: 10px;
+  z-index: 4;
+}
+
+.logout-backdrops {
+  position: absolute;
+  display: none;
+  top: 56px;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.45);
+  z-index: 3;
+}
+
 .log-info {
   padding: 15px 24px;
 }
@@ -97,4 +129,68 @@
 
 .log-btn-text {
   color: #1AC200;
+}
+
+.operation {
+  padding: 0 24px 24px;
+}
+
+.operation-list {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.operation-card {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 24px;
+  gap: 8px;
+}
+
+.operation-card:not(:last-of-type) {
+  border-bottom: 1px solid #DEDEE2;
+}
+
+.operation-card:not(:first-of-type) {
+  padding-top: 24px;
+}
+
+.card-stroke-text {
+  color: #76767A;
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-wrap: nowrap;
+}
+
+.user-trans {
+  color: #000;
+  font-size: 14px;
+}
+
+.operation-more-btn {
+  background-color: transparent;
+  border: 1px solid #1AC200;
+  border-radius: 10px;
+  padding: 13px 0 15px;
+}
+
+
+
+@media (width >= 1024px) {
+  .log-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .log-buttons {
+    display: flex;
+  }
+
+  .more-btn {
+    display: none;
+  }
 }
