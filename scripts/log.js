@@ -26,3 +26,71 @@ document.querySelector('.header-login-btn').addEventListener('click', () => {
       body.style.overflow = 'hidden'; // Блокируем прокрутку
   }
 });
+
+document.querySelectorAll('.go-stacking').forEach(button => {
+  button.addEventListener('click', async function () {
+      const mainContainer = document.querySelector('.main');
+
+      try {
+          // Загружаем HTML-файл
+          const response = await fetch('stacking.html'); // Замените на нужный путь
+          if (!response.ok) throw new Error('Ошибка загрузки файла');
+
+          // Преобразуем полученный HTML в DOM
+          const text = await response.text();
+          const parser = new DOMParser();
+          const doc = parser.parseFromString(text, 'text/html');
+
+          // Находим `.main` в загруженном файле
+          const newMainContent = doc.querySelector('.main');
+          if (!newMainContent) throw new Error('Контейнер .main не найден в файле');
+
+          // Подставляем его содержимое в текущий `.main`
+          mainContainer.innerHTML = newMainContent.innerHTML;
+
+          window.scrollTo({
+            top: 0,
+            behavior: 'smooth' // Плавная прокрутка
+          });
+
+          // Добавляем класс кнопке
+          button.classList.add('its-stake');
+      } catch (error) {
+          console.error('Ошибка:', error);
+      }
+  });
+});
+
+document.querySelectorAll('.go-title').forEach(button => {
+  button.addEventListener('click', async function () {
+      const mainContainer = document.querySelector('.main');
+
+      try {
+          // Загружаем HTML-файл
+          const response = await fetch('loged.html'); // Замените на нужный путь
+          if (!response.ok) throw new Error('Ошибка загрузки файла');
+
+          // Преобразуем полученный HTML в DOM
+          const text = await response.text();
+          const parser = new DOMParser();
+          const doc = parser.parseFromString(text, 'text/html');
+
+          // Находим `.main` в загруженном файле
+          const newMainContent = doc.querySelector('.main');
+          if (!newMainContent) throw new Error('Контейнер .main не найден в файле');
+
+          // Подставляем его содержимое в текущий `.main`
+          mainContainer.innerHTML = newMainContent.innerHTML;
+
+          window.scrollTo({
+            top: 0,
+            behavior: 'smooth' // Плавная прокрутка
+          });
+
+          // Добавляем класс кнопке
+          button.classList.add('its-title');
+      } catch (error) {
+          console.error('Ошибка:', error);
+      }
+  });
+});

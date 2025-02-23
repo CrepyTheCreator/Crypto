@@ -84,7 +84,7 @@ const dropdownBtn = document.querySelector('.dropdown-btn');
 
 document.addEventListener("DOMContentLoaded", function () {
     const menuPhoneBtn = document.getElementById("menu-phone");
-    const menuListBtn = document.querySelector(".menu-list-btn");
+    const menuListBtns = document.querySelectorAll(".close-menu"); // массив элементов
     const menuList = document.querySelector(".menu-list");
     const menuListBack = document.querySelector(".menu-list-back");
 
@@ -99,8 +99,13 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     menuPhoneBtn.addEventListener("click", toggleMenu);
-    menuListBtn.addEventListener("click", closeMenu);
+
+    // Перебираем все кнопки и добавляем обработчик
+    menuListBtns.forEach(btn => {
+        btn.addEventListener("click", closeMenu);
+    });
 });
+
 
 document.addEventListener("DOMContentLoaded", function () {
   const loginBtn = document.getElementById("header-login-btn");
