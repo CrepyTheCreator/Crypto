@@ -41,7 +41,7 @@
         <button class="change-lang-btn">
           <span class="change-lang-text">ru</span>
         </button>
-        <button class="header-login-btn" onclick="window.location.href='./loged.html'">
+        <button class="header-login-btn" id="header-login-btn">
           <img src="./svg/LogIn.svg">
           <span class="headet-login-text">Login</span>
         </button>
@@ -348,6 +348,26 @@
         <div class="menu-list-back"></div>
       </div>
     </menu>
+    <popup class="popup-log">
+      <div class="popup-content">
+        <div class="qr-log-content">
+          <img src="./svg/qr-code.svg" alt="qr-code">
+        </div>
+        <div class="popup-log-text">
+          <p class="popup-l-text">После нажатия кнопки вы перейдете в диалог с нашим ботом @tg_address.</p>
+          <p class="popup-l-text">В диалоге с ботом нажмите кнопку Start.</p>
+          <p class="popup-l-text" style="text-decoration: underline;">Для тестов кнопка переводит на залогиненый сайт!</p>
+        </div>
+        <button class="popup-log-btn" onclick="window.location.href='./loged.html'">
+          <img src="./svg/tg_icon.svg">
+          <span>Войти через Telegram</span>
+        </button>
+        <button class="close-popup-log" id="close-popup-log">
+          <img src="./svg/close_24.svg">
+        </button>
+      </div>
+    </popup>
+    <div class="popup-backdrop"></div>
     <script src="./scripts/script.js"></script>
   </body>
 </html>

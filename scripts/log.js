@@ -12,14 +12,17 @@ document.querySelectorAll('.more-btn').forEach(button => {
 document.querySelector('.header-login-btn').addEventListener('click', () => {
   const loginLogout = document.querySelector('.login-logout');
   const logoutBackdrop = document.querySelector('.logout-backdrops');
+  const body = document.body;
 
-  // Переключаем display: flex инлайн-стилем
-  if (loginLogout.style.display === 'flex') {
+  const isOpen = loginLogout.style.display === 'flex';
+
+  if (isOpen) {
       loginLogout.style.display = 'none';
       logoutBackdrop.style.display = 'none';
+      body.style.overflow = ''; // Возвращаем прокрутку
   } else {
       loginLogout.style.display = 'flex';
       logoutBackdrop.style.display = 'flex';
+      body.style.overflow = 'hidden'; // Блокируем прокрутку
   }
 });
-
