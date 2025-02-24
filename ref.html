@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stacking</title>
+    <link rel="icon" href="./svg/favicon.svg">
+    <link rel="stylesheet" href="./styles/globals.css">
+    <link rel="stylesheet" href="./fonts/fonts.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/log.css">
+    <link rel="stylesheet" href="./styles/stacking.css">
+    <link rel="stylesheet" href="./styles/ref.css">
+  </head>
+  <body class="page">
+    <header class="header">
+      <div class="header-logo-contetnt go-title">
+        <img src="./svg/favicon.svg" alt="Логотип" class="logo">
+        <span class="logo-text">EcoForce</span>
+      </div>
+      <ul class="footer-navigation header-nav">
+        <li class="navig-text-li">
+          <span class="navig-text go-title">Главная</span>
+        </li>
+        <li class="navig-text-li">
+          <span class="navig-text go-stacking">Стейкинг</span>
+        </li>
+        <li class="navig-text-li">
+          <span class="navig-text go-ref">Реферальная программа</span>
+        </li>
+        <li class="navig-text-li">
+          <span class="navig-text">API</span>
+        </li>
+        <li class="navig-text-li">
+          <span class="navig-text">FAQ</span>
+        </li>
+        <li class="navig-text-li">
+          <span class="navig-text">О нас</span>
+        </li>
+      </ul>
+      <div class="header-buttons">
+        <button class="change-lang-btn">
+          <span class="change-lang-text">ru</span>
+        </button>
+        <button class="header-login-btn">
+          <img src="./svg/user.svg">
+        </button>
+        <div class="login-logout" onclick="window.location.href='./unloged.html'">
+          <img src="./svg/logout.svg">
+          <span>Выход</span>
+        </div>
+      </div>
+      <div class="logout-backdrops"></div>
+    </header>
+    <section class="log-info">
+      <ul class="log-list">
+        <li class="log-card">
+          <div class="log-content user-content">
+            <img src="./svg/user.svg" class="log-svg">
+            <div class="log-text">
+              <span>Баланс TRX:</span>
+              <div class="log-card-info">
+                <span class="text-balance">12 345.12</span>
+              </div>
+            </div>
+          </div>
+          <div class="log-buttons">
+            <button class="log-btn">
+              <span class="log-btn-text">Вывести</span>
+            </button>
+            <button class="log-btn">
+              <span class="log-btn-text">Внести</span>
+            </button>
+          </div>
+          <img src="./svg/more.svg" class="more-btn">
+        </li>
+        <li class="log-card">
+          <div class="log-content">
+            <img src="./svg/stacking.svg" class="log-svg">
+            <div class="log-text">
+                <span>Стейкинг TRX:</span>
+                <div class="time-info">
+                  <span class="name-info">APR</span>
+                  <span class="number-info">22%</span>
+                </div>
+              <span class="text-balance">3 500</span>
+            </div>
+          </div>
+          <div class="log-buttons">
+            <button class="log-btn">
+              <span class="log-btn-text">Вывести</span>
+            </button>
+            <button class="log-btn">
+              <span class="log-btn-text">Внести</span>
+            </button>
+          </div>
+          <img src="./svg/more.svg" class="more-btn">
+        </li>
+        <li class="log-card">
+          <div class="log-content">
+            <img src="./svg/log-energy.svg" class="log-svg">
+            <div class="log-text">
+                <span>Энергия:</span>
+                <div class="time-info center-info">
+                  <span class="name-info">24h</span>
+                  <span class="number-info">+668</span>
+                </div>
+              <span class="text-balance">13 832</span>
+            </div>
+          </div>
+          <div class="log-buttons">
+            <button class="log-btn">
+              <span class="log-btn-text">Вывести</span>
+            </button>
+            <button class="log-btn">
+              <span class="log-btn-text">Внести</span>
+            </button>
+          </div>
+          <img src="./svg/more.svg" class="more-btn">
+        </li>
+      </ul>
+    </section>
+    <main class="main hidden">
+      <h1 class="ref-title">Реферальная программа</h1>
+      <section class="reg-users">
+        <div class="reg-content">
+          <span class="reg-title">Registered users</span>
+          <img src="./svg/Hicon/Bold/Group 3.svg">
+        </div>
+        <span class="users-reg-value">112</span>
+      </section>
+      <section class="ref-link">
+        <h2 class="ref-link-title">Реферальная ссылка</h2>
+        <div class="ref-link-copy">
+          <input type="text" id="ref-link" class="ref-link-input" value="https://ecoforce.com?invite=12345678" disabled>
+          <img src="./svg/vuesax/linear/document-copy.svg" class="ref-link-input-img">
+        </div>
+        <button class="ref-link-btn">
+          <span class="ref-link-btn-text">Скопировать</span>
+        </button>
+      </section>
+      <section class="promo-ref">
+        <h2 class="promo-ref-title">Промокод  для бесплатной энергии</h2>
+        <div class="promo-ref-content">
+          <input type="text" class="promo-ref-input" value="H14D5" disabled>
+          <img src="./svg/vuesax/linear/document-copy.svg" class="ref-promo-input-img">
+          <button class="promo-ref-btn">изменить</button>
+        </div>
+        <span class="promo-ref-limit">лимит <span class="promo-ref-limit-value">0/100</span></span>
+      </section>
+      <section class="plus-ref">
+        <ul class="plus-ref-list">
+          <li class="plus-ref-card">
+            <img src="./svg/dolla.svg">
+            <div class="promo-ref-card-contet">
+              <h3 class="promo-ref-card-title">Получайте 5% от каждой покупки энергии вашим партнёром.</h3>
+              <p class="promo-ref-text">Каждый раз, когда приглашённый вами пользователь приобретает энергию, 5% от её стоимости поступают на ваш баланс.</p>
+            </div>
+          </li>
+          <li class="plus-ref-card">
+            <img src="./svg/calendar.svg">
+            <div class="promo-ref-card-contet">
+              <h3 class="promo-ref-card-title">Зарабатывайте 5% от дохода партнёра в стейкинге.</h3>
+              <p class="promo-ref-text">Если ваш партнёр застейкал TRX, вы будете ежедневно получать 5% от его дохода в энергии, которую он генерирует в стейкинге.</p>
+            </div>
+          </li>
+          <li class="plus-ref-card">
+            <img src="./svg/alram-clock.svg">
+            <div class="promo-ref-card-contet">
+              <h3 class="promo-ref-card-title">Создавайте свой промокод и делитесь им!</h3>
+              <p class="promo-ref-text">Создавайте свой промокод и делитесь им! Ваш партнёр получит бесплатную энергию, а вы станете его реферером и начнёте получать пассивный доход от его активности. Ваш промокод можно использовать 100 раз по умолчанию. Один пользователь может применить только один промокод. Если вам требуется увеличить лимит использований кода, свяжитесь с техподдержкой.</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-main">
+        <div class="footer-logo-content">
+          <img src="./svg/logo__final.svg">
+          <span class="logo-text footer-logo-text">EcoForce</span>
+        </div>
+        <ul class="footer-navigation">
+          <li class="navig-text-li">
+            <span class="navig-text go-title">Главная</span>
+          </li>
+          <li class="navig-text-li">
+            <span class="navig-text go-stacking">Стейкинг</span>
+          </li>
+          <li class="navig-text-li">
+            <span class="navig-text go-ref">Реферальная программа</span>
+          </li>
+          <li class="navig-text-li">
+            <span class="navig-text">API</span>
+          </li>
+          <li class="navig-text-li">
+            <span class="navig-text">FAQ</span>
+          </li>
+          <li class="navig-text-li">
+            <span class="navig-text">О нас</span>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-police">
+        <span class="support-text">Техподдержка: <a href="#" class="support-tg">@tg_address</a></span>
+        <div class="footer-low">
+          <span class="copyright">©2025, EcoForce</span>
+          <a href="#" class="police-privacy">Политика конфиденциальности</a>
+        </div>
+      </div>
+    </footer>
+    <menu class="menu-phone">
+      <div class="menu-list-pos">
+        <button class="menu-phone-btn">
+          <img src="./svg/flash.svg">
+          <span class="phone-btn-text">Купить энергию</span>
+        </button>
+        <button class="menu-phone-btn go-stacking">
+          <img src="./svg/coin.svg">
+          <span class="phone-btn-text">Стейкинг</span>
+        </button>
+        <button class="menu-phone-btn">
+          <img src="./svg/activity.svg">
+          <span class="phone-btn-text">Финансы</span>
+        </button>
+        <button class="menu-phone-btn" id="menu-phone">
+          <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3.5 6H21.5" stroke="#909096" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M3.5 12H21.5" stroke="#909096" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M3.5 18H21.5" stroke="#909096" stroke-width="1.5" stroke-linecap="round"/>
+          </svg> 
+          <span class="phone-btn-text">Меню</span>
+        </button>
+        <ul class="menu-list">
+          <li class="menu-text-li">
+            <span class="menu-text go-title close-menu">Главная</span>
+          </li>
+          <li class="menu-text-li">
+            <span class="menu-text go-stacking close-menu">Стейкинг</span>
+          </li>
+          <li class="menu-text-li">
+            <span class="menu-text close-menu go-ref">Реферальная программа</span>
+          </li>
+          <li class="menu-text-li">
+            <span class="menu-text close-menu">API</span>
+          </li>
+          <li class="menu-text-li">
+            <span class="menu-text close-menu">FAQ</span>
+          </li>
+          <li class="menu-text-li">
+            <span class="menu-text close-menu">О нас</span>
+          </li>
+          <button class="menu-list-btn">
+            <img src="./svg/close_24.svg" alt="">
+          </button>
+        </ul>
+        <div class="menu-list-back"></div>
+      </div>
+    </menu>
+    <script src="./scripts/script.js"></script>
+    <script src="./scripts/log.js"></script>
+  </body>
+</html>

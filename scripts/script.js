@@ -65,6 +65,53 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  const menuPhoneBtn = document.getElementById("menu-phone");
+  const menuListBtns = document.querySelectorAll(".close-menu"); // массив элементов
+  const menuList = document.querySelector(".menu-list");
+  const menuListBack = document.querySelector(".menu-list-back");
+
+  function toggleMenu() {
+      menuList.classList.toggle("menu-list-open");
+      menuListBack.classList.toggle("menu-list-back-active");
+  }
+
+  function closeMenu() {
+      menuList.classList.remove("menu-list-open");
+      menuListBack.classList.remove("menu-list-back-active");
+  }
+
+  menuPhoneBtn.addEventListener("click", toggleMenu);
+
+  // Перебираем все кнопки и добавляем обработчик
+  menuListBtns.forEach(btn => {
+      btn.addEventListener("click", closeMenu);
+  });
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+const loginBtn = document.getElementById("header-login-btn");
+const closeBtn = document.getElementById("close-popup-log");
+const popupLog = document.querySelector(".popup-log");
+const backdrop = document.querySelector(".popup-backdrop");
+
+function showPopup() {
+    popupLog.style.display = "block";
+    backdrop.style.display = "block";
+}
+
+function hidePopup() {
+    popupLog.style.display = "none";
+    backdrop.style.display = "none";
+}
+
+loginBtn.addEventListener("click", showPopup);
+closeBtn.addEventListener("click", hidePopup);
+backdrop.addEventListener("click", hidePopup);
+});
+
+
 const slider = document.getElementById('stacking-range');
 const sliderValue = document.getElementById('range-value');
 const stackingValue = document.getElementById('stacking-value');
@@ -80,50 +127,3 @@ const dropdownBtn = document.querySelector('.dropdown-btn');
 
         slider.addEventListener('input', updateProgress);
         updateProgress(); // Инициализация
-
-
-document.addEventListener("DOMContentLoaded", function () {
-    const menuPhoneBtn = document.getElementById("menu-phone");
-    const menuListBtns = document.querySelectorAll(".close-menu"); // массив элементов
-    const menuList = document.querySelector(".menu-list");
-    const menuListBack = document.querySelector(".menu-list-back");
-
-    function toggleMenu() {
-        menuList.classList.toggle("menu-list-open");
-        menuListBack.classList.toggle("menu-list-back-active");
-    }
-
-    function closeMenu() {
-        menuList.classList.remove("menu-list-open");
-        menuListBack.classList.remove("menu-list-back-active");
-    }
-
-    menuPhoneBtn.addEventListener("click", toggleMenu);
-
-    // Перебираем все кнопки и добавляем обработчик
-    menuListBtns.forEach(btn => {
-        btn.addEventListener("click", closeMenu);
-    });
-});
-
-
-document.addEventListener("DOMContentLoaded", function () {
-  const loginBtn = document.getElementById("header-login-btn");
-  const closeBtn = document.getElementById("close-popup-log");
-  const popupLog = document.querySelector(".popup-log");
-  const backdrop = document.querySelector(".popup-backdrop");
-
-  function showPopup() {
-      popupLog.style.display = "block";
-      backdrop.style.display = "block";
-  }
-
-  function hidePopup() {
-      popupLog.style.display = "none";
-      backdrop.style.display = "none";
-  }
-
-  loginBtn.addEventListener("click", showPopup);
-  closeBtn.addEventListener("click", hidePopup);
-  backdrop.addEventListener("click", hidePopup);
-});

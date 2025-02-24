@@ -57,3 +57,15 @@ document.querySelectorAll('.go-title').forEach(button => {
       }, 500);
   });
 });
+
+document.querySelectorAll('.go-ref').forEach(button => {
+  button.addEventListener('click', function (event) {
+      event.preventDefault();
+      const main = document.querySelector('.main');
+      main.classList.add('hidden');
+
+      setTimeout(() => {
+          window.location.href = "ref.html"; // Путь до новой страницы
+      }, 500);
+  });
+});

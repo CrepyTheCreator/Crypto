@@ -1,16 +1,17 @@
 .main {
   opacity: 1;
-  will-change: opacity;
   transition: opacity 1s ease;
+  will-change: opacity;
 }
 
 .hidden {
-  opacity: 0;
   display: block;
+  opacity: 0;
 }
 
 .go-stacking,
-.go-title {
+.go-title,
+.go-ref {
   cursor: pointer;
 }
 
@@ -26,34 +27,34 @@
 .login-logout {
   position: absolute;
   top: 40px;
+  right: 10px;
+  z-index: 4;
   display: none;
   gap: 5px;
-  right: 10px;
+  border-radius: 10px;
+  padding: 14px 50px 14px 10px;
   color: #000;
   background-color: #fff;
-  padding: 14px 50px 14px 10px;
-  border-radius: 10px;
-  z-index: 4;
 }
 
 .logout-backdrops {
   position: fixed;
-  display: none;
   top: 56px;
-  left: 0;
   right: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.45);
-  max-width: 1210px;
+  left: 0;
   z-index: 2;
+  display: none;
+  width: 100vw;
+  max-width: 1210px;
+  height: 100vh;
   margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.45);
 }
 
 .log-info {
   max-width: 1210px;
-  padding: 15px 24px;
   margin: 0 auto;
+  padding: 15px 24px;
 }
 
 .log-list {
@@ -63,20 +64,20 @@
 }
 
 .log-card {
-  background-color: #fff;
-  border-radius: 10px;
-  padding: 6px 0;
   position: relative;
-  min-height: 47px;
   display: flex;
   flex-direction: column;
   gap: 10px;
+  min-height: 47px;
+  border-radius: 10px;
+  padding: 6px 0;
+  background-color: #fff;
 }
 
 .more-btn {
   position: absolute;
-  right: 5px;
   top: 12px;
+  right: 5px;
 }
 
 .log-card-info {
@@ -106,13 +107,13 @@
 }
 
 .name-info {
-  font-size: 12px;
   color: rgba(0, 0, 0, 0.45);
+  font-size: 12px;
 }
 
 .number-info {
-  font-size: 12px;
   color: #1AC200;
+  font-size: 12px;
 }
 
 .log-svg {
@@ -121,21 +122,21 @@
 
 .log-text {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
 }
 
 .text-balance {
-  font-size: 20px;
   font-weight: 700;
+  font-size: 20px;
 }
 
 .log-buttons {
-  padding: 0 10px;
   display: none;
-  gap: 24px;
   justify-content: space-between;
+  gap: 24px;
+  padding: 0 10px;
 }
 
 .active-log {
@@ -143,10 +144,10 @@
 }
 
 .log-btn {
-  background-color: transparent;
-  border-radius: 10px;
-  border: 1px solid #1AC200;
   width: 100%;
+  border: 1px solid #1AC200;
+  border-radius: 10px;
+  background-color: transparent;
 }
 
 .log-btn-text {
@@ -158,18 +159,18 @@
 }
 
 .operation-list {
-  background-color: #fff;
-  border-radius: 15px;
-  padding: 16px;
   display: flex;
   flex-direction: column;
+  border-radius: 15px;
+  padding: 16px;
+  background-color: #fff;
 }
 
 .operation-card {
   display: flex;
   flex-direction: column;
-  padding-bottom: 24px;
   gap: 8px;
+  padding-bottom: 24px;
 }
 
 .operation-card:not(:last-of-type) {
@@ -181,9 +182,9 @@
 }
 
 .card-stroke-text {
+  overflow: hidden;
   color: #76767A;
   font-size: 14px;
-  overflow: hidden;
   text-overflow: ellipsis;
   text-wrap: nowrap;
 }
@@ -194,10 +195,10 @@
 }
 
 .operation-more-btn {
-  background-color: transparent;
   border: 1px solid #1AC200;
   border-radius: 10px;
   padding: 13px 0 15px;
+  background-color: transparent;
 }
 
 
