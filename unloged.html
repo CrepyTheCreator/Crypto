@@ -10,20 +10,19 @@
     <link rel="stylesheet" href="./styles/globals.css" />
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/animations.css" />
-    <link rel="stylesheet" href="./styles/log.css">
   </head>
   <body class="page">
     <header class="header">
-      <div class="header-logo-contetnt go-title">
+      <div class="header-logo-contetnt">
         <img src="./svg/favicon.svg" alt="Логотип" class="logo">
         <span class="logo-text">EcoForce</span>
       </div>
       <ul class="footer-navigation header-nav">
         <li class="navig-text-li">
-          <span class="navig-text go-title">Главная</span>
+          <span class="navig-text">Главная</span>
         </li>
         <li class="navig-text-li">
-          <span class="navig-text go-stacking">Стейкинг</span>
+          <span class="navig-text">Стейкинг</span>
         </li>
         <li class="navig-text-li">
           <span class="navig-text">Реферальная программа</span>
@@ -42,84 +41,12 @@
         <button class="change-lang-btn">
           <span class="change-lang-text">ru</span>
         </button>
-        <button class="header-login-btn">
-          <img src="./svg/user.svg">
+        <button class="header-login-btn" id="header-login-btn">
+          <img src="./svg/LogIn.svg">
+          <span class="headet-login-text">Login</span>
         </button>
-        <div class="login-logout" onclick="window.location.href='./index.html'">
-          <img src="./svg/logout.svg">
-          <span>Выход</span>
-        </div>
       </div>
-      <div class="logout-backdrops"></div>
     </header>
-    <section class="log-info">
-      <ul class="log-list">
-        <li class="log-card">
-          <div class="log-content user-content">
-            <img src="./svg/user.svg" class="log-svg">
-            <div class="log-text">
-              <span>Баланс TRX:</span>
-              <div class="log-card-info">
-                <span class="text-balance">12 345.12</span>
-              </div>
-            </div>
-          </div>
-          <div class="log-buttons">
-            <button class="log-btn">
-              <span class="log-btn-text">Вывести</span>
-            </button>
-            <button class="log-btn">
-              <span class="log-btn-text">Внести</span>
-            </button>
-          </div>
-          <img src="./svg/more.svg" class="more-btn">
-        </li>
-        <li class="log-card">
-          <div class="log-content">
-            <img src="./svg/stacking.svg" class="log-svg">
-            <div class="log-text">
-                <span>Стейкинг TRX:</span>
-                <div class="time-info">
-                  <span class="name-info">APR</span>
-                  <span class="number-info">22%</span>
-                </div>
-              <span class="text-balance">3 500</span>
-            </div>
-          </div>
-          <div class="log-buttons">
-            <button class="log-btn">
-              <span class="log-btn-text">Вывести</span>
-            </button>
-            <button class="log-btn">
-              <span class="log-btn-text">Внести</span>
-            </button>
-          </div>
-          <img src="./svg/more.svg" class="more-btn">
-        </li>
-        <li class="log-card">
-          <div class="log-content">
-            <img src="./svg/log-energy.svg" class="log-svg">
-            <div class="log-text">
-                <span>Энергия:</span>
-                <div class="time-info center-info">
-                  <span class="name-info">24h</span>
-                  <span class="number-info">+668</span>
-                </div>
-              <span class="text-balance">13 832</span>
-            </div>
-          </div>
-          <div class="log-buttons">
-            <button class="log-btn">
-              <span class="log-btn-text">Вывести</span>
-            </button>
-            <button class="log-btn">
-              <span class="log-btn-text">Внести</span>
-            </button>
-          </div>
-          <img src="./svg/more.svg" class="more-btn">
-        </li>
-      </ul>
-    </section>
     <main class="main">
       <section class="energy" style="grid-area: sec-energy;"> 
         <h2 class="energy-title title">Сохрани 52% на комиссии при отправке USDT trc20</h2>
@@ -209,106 +136,6 @@
             </div>
           </div>
       </section>
-      <section class="operation">
-        <h2 class="card-title-content oper-title">История операций</h2>
-        <ul class="operation-list">
-          <li class="operation-card">
-            <span class="card-stroke-text">
-              Операция 
-              <span class="user-trans">#1</span>
-            </span>
-            <span class="card-stroke-text">
-              Дата: 
-              <span class="user-trans">25.01.2025</span>
-            </span>
-            <span class="card-stroke-text">
-              Адрес: 
-              <span class="user-trans">TM1zzNDZD2DPASbKcgdVoTYhfmYgtfwx9R</span>
-            </span>
-            <span class="card-stroke-text">
-              Энергия: 
-              <span class="user-trans">153,000</span>
-            </span>
-            <span class="card-stroke-text">
-              Срок: 
-              <span class="user-trans">1 день</span>
-            </span>
-            <span class="card-stroke-text">
-              Статус: 
-              <span class="user-trans">Делегировано</span>
-            </span>
-            <span class="card-stroke-text">
-              Стоимость: 
-              <span class="user-trans">3 TRX</span>
-            </span>
-          </li>
-          <li class="operation-card">
-            <span class="card-stroke-text">
-              Операция 
-              <span class="user-trans">#2</span>
-            </span>
-            <span class="card-stroke-text">
-              Дата: 
-              <span class="user-trans">25.01.2025</span>
-            </span>
-            <span class="card-stroke-text">
-              Адрес: 
-              <span class="user-trans">TM1zzNDZD2DPASbKcgdVoTYhfmYgtfwx9R</span>
-            </span>
-            <span class="card-stroke-text">
-              Энергия: 
-              <span class="user-trans">153,000</span>
-            </span>
-            <span class="card-stroke-text">
-              Срок: 
-              <span class="user-trans">1 день</span>
-            </span>
-            <span class="card-stroke-text">
-              Статус: 
-              <span class="user-trans">Делегировано</span>
-            </span>
-            <span class="card-stroke-text">
-              Стоимость: 
-              <span class="user-trans">3 TRX</span>
-            </span>
-          </li>
-          <li class="operation-card">
-            <span class="card-stroke-text">
-              Операция 
-              <span class="user-trans">#3</span>
-            </span>
-            <span class="card-stroke-text">
-              Дата: 
-              <span class="user-trans">25.01.2025</span>
-            </span>
-            <span class="card-stroke-text">
-              Адрес: 
-              <span class="user-trans">TM1zzNDZD2DPASbKcgdVoTYhfmYgtfwx9R</span>
-            </span>
-            <span class="card-stroke-text">
-              Энергия: 
-              <span class="user-trans">153,000</span>
-            </span>
-            <span class="card-stroke-text">
-              Срок: 
-              <span class="user-trans">1 день</span>
-            </span>
-            <span class="card-stroke-text">
-              Статус: 
-              <span class="user-trans">Делегировано</span>
-            </span>
-            <span class="card-stroke-text">
-              Стоимость: 
-              <span class="user-trans">3 TRX</span>
-            </span>
-          </li>
-          <button class="operation-more-btn">
-            <span>
-              Показать еще
-            </span>
-          </button>
-        </ul>
-      </section>
       <section class="stacking" style="grid-area: sec-stacking;">
         <h2 class="stacking-title title">
           Стейкинг с пассивным доходом 22% годовых
@@ -388,7 +215,7 @@
               <li class="stacking-tab-text">408 ~ 102,2$</li>
             </ul>
           </div>
-          <button class="stacking-btn go-stacking">
+          <button class="stacking-btn">
             <span class="stacking-btn-text">Начать стейкинг</span>
           </button>
         </div>
@@ -446,10 +273,10 @@
         </div>
         <ul class="footer-navigation">
           <li class="navig-text-li">
-            <span class="navig-text go-title">Главная</span>
+            <span class="navig-text">Главная</span>
           </li>
           <li class="navig-text-li">
-            <span class="navig-text go-stacking">Стейкинг</span>
+            <span class="navig-text">Стейкинг</span>
           </li>
           <li class="navig-text-li">
             <span class="navig-text">Реферальная программа</span>
@@ -479,7 +306,7 @@
           <img src="./svg/flash.svg">
           <span class="phone-btn-text">Купить энергию</span>
         </button>
-        <button class="menu-phone-btn go-stacking">
+        <button class="menu-phone-btn">
           <img src="./svg/coin.svg">
           <span class="phone-btn-text">Стейкинг</span>
         </button>
@@ -497,10 +324,10 @@
         </button>
         <ul class="menu-list">
           <li class="menu-text-li">
-            <span class="menu-text go-title close-menu">Главная</span>
+            <span class="menu-text close-menu">Главная</span>
           </li>
           <li class="menu-text-li">
-            <span class="menu-text go-stacking close-menu">Стейкинг</span>
+            <span class="menu-text close-menu">Стейкинг</span>
           </li>
           <li class="menu-text-li">
             <span class="menu-text close-menu">Реферальная программа</span>
@@ -521,7 +348,26 @@
         <div class="menu-list-back"></div>
       </div>
     </menu>
+    <popup class="popup-log">
+      <div class="popup-content">
+        <div class="qr-log-content">
+          <img src="./svg/qr-code.svg" alt="qr-code">
+        </div>
+        <div class="popup-log-text">
+          <p class="popup-l-text">После нажатия кнопки вы перейдете в диалог с нашим ботом @tg_address.</p>
+          <p class="popup-l-text">В диалоге с ботом нажмите кнопку Start.</p>
+          <p class="popup-l-text" style="text-decoration: underline;">Для тестов кнопка переводит на залогиненый сайт!</p>
+        </div>
+        <button class="popup-log-btn" onclick="window.location.href='./index.html'">
+          <img src="./svg/tg_icon.svg">
+          <span>Войти через Telegram</span>
+        </button>
+        <button class="close-popup-log" id="close-popup-log">
+          <img src="./svg/close_24.svg">
+        </button>
+      </div>
+    </popup>
+    <div class="popup-backdrop"></div>
     <script src="./scripts/script.js"></script>
-    <script src="./scripts/log.js"></script>
   </body>
 </html>

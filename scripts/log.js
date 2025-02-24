@@ -27,70 +27,33 @@ document.querySelector('.header-login-btn').addEventListener('click', () => {
   }
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+  const main = document.querySelector('.main');
+  setTimeout(() => {
+      main.classList.remove('hidden');
+  }, 100); // Убираем скрытие после загрузки
+});
+
 document.querySelectorAll('.go-stacking').forEach(button => {
-  button.addEventListener('click', async function () {
-      const mainContainer = document.querySelector('.main');
+  button.addEventListener('click', function (event) {
+      event.preventDefault();
+      const main = document.querySelector('.main');
+      main.classList.add('hidden');
 
-      try {
-          // Загружаем HTML-файл
-          const response = await fetch('stacking.html'); // Замените на нужный путь
-          if (!response.ok) throw new Error('Ошибка загрузки файла');
-
-          // Преобразуем полученный HTML в DOM
-          const text = await response.text();
-          const parser = new DOMParser();
-          const doc = parser.parseFromString(text, 'text/html');
-
-          // Находим `.main` в загруженном файле
-          const newMainContent = doc.querySelector('.main');
-          if (!newMainContent) throw new Error('Контейнер .main не найден в файле');
-
-          // Подставляем его содержимое в текущий `.main`
-          mainContainer.innerHTML = newMainContent.innerHTML;
-
-          window.scrollTo({
-            top: 0,
-            behavior: 'smooth' // Плавная прокрутка
-          });
-
-          // Добавляем класс кнопке
-          button.classList.add('its-stake');
-      } catch (error) {
-          console.error('Ошибка:', error);
-      }
+      setTimeout(() => {
+          window.location.href = "stacking.html"; // Путь до новой страницы
+      }, 500);
   });
 });
 
 document.querySelectorAll('.go-title').forEach(button => {
-  button.addEventListener('click', async function () {
-      const mainContainer = document.querySelector('.main');
+  button.addEventListener('click', function (event) {
+      event.preventDefault();
+      const main = document.querySelector('.main');
+      main.classList.add('hidden');
 
-      try {
-          // Загружаем HTML-файл
-          const response = await fetch('loged.html'); // Замените на нужный путь
-          if (!response.ok) throw new Error('Ошибка загрузки файла');
-
-          // Преобразуем полученный HTML в DOM
-          const text = await response.text();
-          const parser = new DOMParser();
-          const doc = parser.parseFromString(text, 'text/html');
-
-          // Находим `.main` в загруженном файле
-          const newMainContent = doc.querySelector('.main');
-          if (!newMainContent) throw new Error('Контейнер .main не найден в файле');
-
-          // Подставляем его содержимое в текущий `.main`
-          mainContainer.innerHTML = newMainContent.innerHTML;
-
-          window.scrollTo({
-            top: 0,
-            behavior: 'smooth' // Плавная прокрутка
-          });
-
-          // Добавляем класс кнопке
-          button.classList.add('its-title');
-      } catch (error) {
-          console.error('Ошибка:', error);
-      }
+      setTimeout(() => {
+          window.location.href = "index.html"; // Путь до новой страницы
+      }, 500);
   });
 });

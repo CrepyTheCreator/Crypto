@@ -2,6 +2,12 @@
   background-color: #EFF6F8;
 }
 
+.main:has(.my-stake) {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
 .my-stake {
   margin: 0 24px;
   background-color: #fff;
@@ -13,8 +19,16 @@
 }
 
 .my-stake-title {
-  padding: 0 80px 8px;
+  padding-bottom: 8px;
   border-bottom: 1px solid #D9D9D9;
+  text-align: center;
+}
+
+.my-stake-content {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .my-stake-list {
@@ -41,16 +55,17 @@
 }
 
 .stats {
-  margin: 10px 24px 0;
+  margin: 0 24px;
   background-color: #fff;
   border-radius: 10px;
   font-family: 'popins-semi', sans-serif;
 }
 
 .stats-title {
-  padding: 15px 35px 8px;
+  padding: 15px 0 8px;
   font-size: 22px;
   border-bottom: 1px solid #D9D9D9; 
+  text-align: center;
 }
 
 .stats-list {
@@ -95,8 +110,13 @@
   color: #1AC200;
 }
 
+.desktop-earn {
+  font-size: 20px;
+  display: none;
+}
+
 .procent {
-  margin: 13px 24px 0;
+  margin: 0 24px;
   position: relative;
   background-color: #fff;
   padding: 21px 20px 110px;
@@ -132,11 +152,96 @@
   margin-top: 5px;
 }
 
-.earn {
-  margin-top: 16px;
-}
-
 .card-title-content {
   padding: 0;
   font-size: 20px;
+}
+
+.earn {
+  padding-bottom: 0;
+}
+
+.operation-dask {
+  padding: 0 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+}
+
+.oper-list {
+  background-color: #fff;
+  display: flex;
+  padding: 40px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.oper-line {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.head-line {
+  background-color: #F3F3F5;
+  padding: 21px 0 21px 24px;
+}
+
+@media (width >= 1024px) {
+  .main:has(.my-stake) {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    'stake stake stats stats stats'
+    'proc proc proc sec-earn sec-earn'
+    'proc proc proc sec-earn sec-earn'
+    'oper oper oper oper oper'
+    'oper oper oper oper oper'
+    'oper oper oper oper oper';
+  }
+
+  .my-stake,
+  .procent {
+    margin-right: 0;
+  }
+
+  .procent {
+    padding-bottom: 0;
+  }
+
+  .procent-text {
+    width: 45%;
+  }
+
+  .procent-img {
+    width: 300px;
+    right: 15px;
+    bottom: 20px;
+  }
+
+  .stats {
+    margin-left: 0;
+  }
+
+  .stats-list {
+    padding: 16px 36px;
+  }
+
+  .earn {
+    margin-left: 0;
+    padding-top: 0;
+  }
+
+  .mobile-earn {
+    display: none;
+  }
+
+  .desktop-earn {
+    display: block;
+  }
+
+
 }

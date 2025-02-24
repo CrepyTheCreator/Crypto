@@ -3,47 +3,159 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stacking</title>
+    <link rel="icon" href="./svg/favicon.svg">
     <link rel="stylesheet" href="./styles/globals.css">
     <link rel="stylesheet" href="./fonts/fonts.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/log.css">
+    <link rel="stylesheet" href="./styles/stacking.css">
   </head>
   <body class="page">
-    <main class="main">
-      <section class="my-stake">
+    <header class="header">
+      <div class="header-logo-contetnt go-title">
+        <img src="./svg/favicon.svg" alt="Логотип" class="logo">
+        <span class="logo-text">EcoForce</span>
+      </div>
+      <ul class="footer-navigation header-nav">
+        <li class="navig-text-li">
+          <span class="navig-text go-title">Главная</span>
+        </li>
+        <li class="navig-text-li">
+          <span class="navig-text go-stacking">Стейкинг</span>
+        </li>
+        <li class="navig-text-li">
+          <span class="navig-text">Реферальная программа</span>
+        </li>
+        <li class="navig-text-li">
+          <span class="navig-text">API</span>
+        </li>
+        <li class="navig-text-li">
+          <span class="navig-text">FAQ</span>
+        </li>
+        <li class="navig-text-li">
+          <span class="navig-text">О нас</span>
+        </li>
+      </ul>
+      <div class="header-buttons">
+        <button class="change-lang-btn">
+          <span class="change-lang-text">ru</span>
+        </button>
+        <button class="header-login-btn">
+          <img src="./svg/user.svg">
+        </button>
+        <div class="login-logout" onclick="window.location.href='./index.html'">
+          <img src="./svg/logout.svg">
+          <span>Выход</span>
+        </div>
+      </div>
+      <div class="logout-backdrops"></div>
+    </header>
+    <section class="log-info">
+      <ul class="log-list">
+        <li class="log-card">
+          <div class="log-content user-content">
+            <img src="./svg/user.svg" class="log-svg">
+            <div class="log-text">
+              <span>Баланс TRX:</span>
+              <div class="log-card-info">
+                <span class="text-balance">12 345.12</span>
+              </div>
+            </div>
+          </div>
+          <div class="log-buttons">
+            <button class="log-btn">
+              <span class="log-btn-text">Вывести</span>
+            </button>
+            <button class="log-btn">
+              <span class="log-btn-text">Внести</span>
+            </button>
+          </div>
+          <img src="./svg/more.svg" class="more-btn">
+        </li>
+        <li class="log-card">
+          <div class="log-content">
+            <img src="./svg/stacking.svg" class="log-svg">
+            <div class="log-text">
+                <span>Стейкинг TRX:</span>
+                <div class="time-info">
+                  <span class="name-info">APR</span>
+                  <span class="number-info">22%</span>
+                </div>
+              <span class="text-balance">3 500</span>
+            </div>
+          </div>
+          <div class="log-buttons">
+            <button class="log-btn">
+              <span class="log-btn-text">Вывести</span>
+            </button>
+            <button class="log-btn">
+              <span class="log-btn-text">Внести</span>
+            </button>
+          </div>
+          <img src="./svg/more.svg" class="more-btn">
+        </li>
+        <li class="log-card">
+          <div class="log-content">
+            <img src="./svg/log-energy.svg" class="log-svg">
+            <div class="log-text">
+                <span>Энергия:</span>
+                <div class="time-info center-info">
+                  <span class="name-info">24h</span>
+                  <span class="number-info">+668</span>
+                </div>
+              <span class="text-balance">13 832</span>
+            </div>
+          </div>
+          <div class="log-buttons">
+            <button class="log-btn">
+              <span class="log-btn-text">Вывести</span>
+            </button>
+            <button class="log-btn">
+              <span class="log-btn-text">Внести</span>
+            </button>
+          </div>
+          <img src="./svg/more.svg" class="more-btn">
+        </li>
+      </ul>
+    </section>
+    <main class="main hidden">
+      <section class="my-stake" style="grid-area: stake;">
         <h2 class="my-stake-title">Мой стейкинг</h2>
-        <ul class="my-stake-list">
-          <li class="my-stake-line">
-            <span class="my-stake-line-name">В стейкиге:</span>
-            <span class="my-stake-line-value">
-              <span class="my-stake-value">
-                2000
+        <div class="my-stake-content">
+          <ul class="my-stake-list">
+            <li class="my-stake-line">
+              <span class="my-stake-line-name">В стейкиге:</span>
+              <span class="my-stake-line-value">
+                <span class="my-stake-value">
+                  2000
+                </span>
+                TRX
               </span>
-              TRX
-            </span>
-          </li>
-          <li class="my-stake-line">
-            <span class="my-stake-line-name">Доходность в день:</span>
-            <span class="my-stake-line-value">
-              ~
-              <span class="my-stake-value">
-                11 203
+            </li>
+            <li class="my-stake-line">
+              <span class="my-stake-line-name">Доходность в день:</span>
+              <span class="my-stake-line-value">
+                ~
+                <span class="my-stake-value">
+                  11 203
+                </span>
+                <img src="./svg/thounder.svg">
+              </span> 
+            </li>
+            <li class="my-stake-line">
+              <span class="my-stake-line-name">Заработано всего: </span>
+              <span class="my-stake-line-value">
+                <span class="my-stake-value">
+                  150 000
+                </span>
+                <img src="./svg/thounder.svg">
               </span>
-              <img src="./svg/thounder.svg">
-            </span> 
-          </li>
-          <li class="my-stake-line">
-            <span class="my-stake-line-name">Заработано всего: </span>
-            <span class="my-stake-line-value">
-              <span class="my-stake-value">
-                150 000
-              </span>
-              <img src="./svg/thounder.svg">
-            </span>
-          </li>
-        </ul>
+            </li>
+          </ul>
+        </div>
       </section>
-      <section class="stats">
+      <section class="stats" style="grid-area: stats;">
         <h2 class="stats-title">Статистика сети TRON</h2>
         <ul class="stats-list">
           <li class="stats-line">
@@ -111,7 +223,7 @@
           </li>
         </ul>
       </section>
-      <section class="procent">
+      <section class="procent" style="grid-area: proc;">
         <h2 class="procent-title">
           22% годовых пассивного дохода от стейкинга ваших TRX
         </h2>
@@ -124,7 +236,7 @@
       </section>
       <section class="earn" style="grid-area: sec-earn;">
         <div class="card card-earn">
-          <h2 class="title-earn">Застейкать TRX</h2>
+          <h2 class="title-earn"><span class="mobile-earn">Застейкать TRX </span><span class="desktop-earn">Стейкинг: Калькулятор доходности</span></h2>
           <div class="stacking-calc">
             <div class="stacking-input-content input">
               <input type="number" class="stacking-input" id="stacking-value" value="2000">
@@ -263,8 +375,124 @@
           </button>
         </ul>
       </section>
-      <link rel="stylesheet" href="./styles/stacking.css">
+      <section class="operation-dask" style="grid-area: oper;">
+        <h2 class="card-title-content oper-title">История операций</h2>
+        <ul class="oper-list">
+          <li class="oper-lin first-line">
+            <span class="head-line-text head-line" >Операция</span>
+            <span class="oper-text">1</span>
+          </li>
+          <li class="oper-line">
+            <span class="head-line-text">Дата</span>
+            <span class="oper-text">25.01.2025</span>
+          </li>
+          <li class="oper-line">
+            <span class="head-line-text third-line">Адрес</span>
+            <span class="oper-text">TM1zzNDZD2DPASbKcgdVoTYhfmYgtfwx9R</span>
+          </li>
+          <li class="oper-line">
+            <span class="head-line-text">Энергия</span>
+            <span class="oper-text">153,000</span>
+          </li>
+          <li class="oper-line">
+            <span class="head-line-text">Срок</span>
+            <span class="oper-text">1 день</span>
+          </li>
+          <li class="oper-line">
+            <span class="head-line-text">Статус</span>
+            <span class="oper-text">Делегировано</span>
+          </li>
+          <li class="oper-line">
+            <span class="head-line-text">Стоимость</span>
+            <span class="oper-text">3 TRX</span>
+          </li>
+        </ul>
+      </section>
     </main>
+    <footer class="footer">
+      <div class="footer-main">
+        <div class="footer-logo-content">
+          <img src="./svg/logo__final.svg">
+          <span class="logo-text footer-logo-text">EcoForce</span>
+        </div>
+        <ul class="footer-navigation">
+          <li class="navig-text-li">
+            <span class="navig-text go-title">Главная</span>
+          </li>
+          <li class="navig-text-li">
+            <span class="navig-text go-stacking">Стейкинг</span>
+          </li>
+          <li class="navig-text-li">
+            <span class="navig-text">Реферальная программа</span>
+          </li>
+          <li class="navig-text-li">
+            <span class="navig-text">API</span>
+          </li>
+          <li class="navig-text-li">
+            <span class="navig-text">FAQ</span>
+          </li>
+          <li class="navig-text-li">
+            <span class="navig-text">О нас</span>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-police">
+        <span class="support-text">Техподдержка: <a href="#" class="support-tg">@tg_address</a></span>
+        <div class="footer-low">
+          <span class="copyright">©2025, EcoForce</span>
+          <a href="#" class="police-privacy">Политика конфиденциальности</a>
+        </div>
+      </div>
+    </footer>
+    <menu class="menu-phone">
+      <div class="menu-list-pos">
+        <button class="menu-phone-btn">
+          <img src="./svg/flash.svg">
+          <span class="phone-btn-text">Купить энергию</span>
+        </button>
+        <button class="menu-phone-btn go-stacking">
+          <img src="./svg/coin.svg">
+          <span class="phone-btn-text">Стейкинг</span>
+        </button>
+        <button class="menu-phone-btn">
+          <img src="./svg/activity.svg">
+          <span class="phone-btn-text">Финансы</span>
+        </button>
+        <button class="menu-phone-btn" id="menu-phone">
+          <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3.5 6H21.5" stroke="#909096" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M3.5 12H21.5" stroke="#909096" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M3.5 18H21.5" stroke="#909096" stroke-width="1.5" stroke-linecap="round"/>
+          </svg> 
+          <span class="phone-btn-text">Меню</span>
+        </button>
+        <ul class="menu-list">
+          <li class="menu-text-li">
+            <span class="menu-text go-title close-menu">Главная</span>
+          </li>
+          <li class="menu-text-li">
+            <span class="menu-text go-stacking close-menu">Стейкинг</span>
+          </li>
+          <li class="menu-text-li">
+            <span class="menu-text close-menu">Реферальная программа</span>
+          </li>
+          <li class="menu-text-li">
+            <span class="menu-text close-menu">API</span>
+          </li>
+          <li class="menu-text-li">
+            <span class="menu-text close-menu">FAQ</span>
+          </li>
+          <li class="menu-text-li">
+            <span class="menu-text close-menu">О нас</span>
+          </li>
+          <button class="menu-list-btn">
+            <img src="./svg/close_24.svg" alt="">
+          </button>
+        </ul>
+        <div class="menu-list-back"></div>
+      </div>
+    </menu>
     <script src="./scripts/script.js"></script>
+    <script src="./scripts/log.js"></script>
   </body>
 </html>
