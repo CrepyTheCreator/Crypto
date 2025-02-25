@@ -11,8 +11,19 @@
 
 .go-stacking,
 .go-title,
-.go-ref {
+.go-ref,
+.go-api,
+.go-faq {
   cursor: pointer;
+}
+
+.go-stacking:hover,
+.go-title:hover,
+.go-ref:hover,
+.go-api:hover,
+.go-faq:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
 .header {

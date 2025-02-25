@@ -169,3 +169,27 @@
   font-size: 14px;
   line-height: 1.69;
 }
+
+@media (width >= 1024px) {
+  .main:has(.reg-users) {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas: 
+    'ref-title ref-title ref-title ref-title ref-title'
+    'plus-ref plus-ref plus-ref reg-users reg-users'
+    'plus-ref plus-ref plus-ref ref-link ref-link'
+    'plus-ref plus-ref plus-ref promo-ref promo-ref';
+    gap: 25px;
+  }
+
+  .ref-link,
+  .promo-ref,
+  .reg-users,
+  .plus-ref {
+    margin-top: 0;
+  }
+
+  .plus-ref-list {
+    height: 100%;
+  }
+}

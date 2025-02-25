@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Referal</title>
+    <title>FAQ</title>
     <link rel="icon" href="./svg/favicon.svg">
     <link rel="stylesheet" href="./styles/globals.css">
     <link rel="stylesheet" href="./fonts/fonts.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/log.css">
     <link rel="stylesheet" href="./styles/stacking.css">
-    <link rel="stylesheet" href="./styles/ref.css">
+    <link rel="stylesheet" href="./styles/faq.css">
   </head>
   <body class="page">
     <header class="header">
@@ -121,58 +121,60 @@
       </ul>
     </section>
     <main class="main hidden">
-      <h1 class="ref-title" style="grid-area: ref-title;">Реферальная программа</h1>
-      <section class="reg-users" style="grid-area: reg-users;">
-        <div class="reg-content">
-          <span class="reg-title">Registered users</span>
-          <img src="./svg/Hicon/Bold/Group 3.svg">
-        </div>
-        <span class="users-reg-value">112</span>
-      </section>
-      <section class="ref-link" style="grid-area: ref-link;">
-        <h2 class="ref-link-title">Реферальная ссылка</h2>
-        <div class="ref-link-copy">
-          <input type="text" id="ref-link" class="ref-link-input" value="https://ecoforce.com?invite=12345678" disabled>
-          <img src="./svg/vuesax/linear/document-copy.svg" class="ref-link-input-img">
-        </div>
-        <button class="ref-link-btn">
-          <span class="ref-link-btn-text">Скопировать</span>
-        </button>
-      </section>
-      <section class="promo-ref" style="grid-area: promo-ref;">
-        <h2 class="promo-ref-title">Промокод  для бесплатной энергии</h2>
-        <div class="promo-ref-content">
-          <input type="text" class="promo-ref-input" value="H14D5" disabled>
-          <img src="./svg/vuesax/linear/document-copy.svg" class="ref-promo-input-img">
-          <button class="promo-ref-btn">изменить</button>
-        </div>
-        <span class="promo-ref-limit">лимит <span class="promo-ref-limit-value">0/100</span></span>
-      </section>
-      <section class="plus-ref" style="grid-area: plus-ref;">
-        <ul class="plus-ref-list">
-          <li class="plus-ref-card">
-            <img src="./svg/dolla.svg">
-            <div class="promo-ref-card-contet">
-              <h3 class="promo-ref-card-title">Получайте 5% от каждой покупки энергии вашим партнёром.</h3>
-              <p class="promo-ref-text">Каждый раз, когда приглашённый вами пользователь приобретает энергию, 5% от её стоимости поступают на ваш баланс.</p>
-            </div>
-          </li>
-          <li class="plus-ref-card">
-            <img src="./svg/calendar.svg">
-            <div class="promo-ref-card-contet">
-              <h3 class="promo-ref-card-title">Зарабатывайте 5% от дохода партнёра в стейкинге.</h3>
-              <p class="promo-ref-text">Если ваш партнёр застейкал TRX, вы будете ежедневно получать 5% от его дохода в энергии, которую он генерирует в стейкинге.</p>
-            </div>
-          </li>
-          <li class="plus-ref-card">
-            <img src="./svg/alram-clock.svg">
-            <div class="promo-ref-card-contet">
-              <h3 class="promo-ref-card-title">Создавайте свой промокод и делитесь им!</h3>
-              <p class="promo-ref-text">Создавайте свой промокод и делитесь им! Ваш партнёр получит бесплатную энергию, а вы станете его реферером и начнёте получать пассивный доход от его активности. Ваш промокод можно использовать 100 раз по умолчанию. Один пользователь может применить только один промокод. Если вам требуется увеличить лимит использований кода, свяжитесь с техподдержкой.</p>
-            </div>
-          </li>
-        </ul>
-      </section>
+      <h2 class="faq-title">FAQ</h2>
+      <ul class="faq-list">
+        <li class="faq-card">
+          <div class="faq-card-head">
+            <h3 class="faq-card-title">Что такое стейкинг?</h3>
+            <img src="./svg/service-list.svg" class="faq-list-scg">
+          </div>
+          <div class="faq-card-main">
+            <span class="faq-answer">Стейкинг (staking) — это процесс блокировки криптовалюты 
+              на определённый срок для поддержки работы блокчейна и 
+              получения вознаграждения.
+            </span>
+          </div>
+        </li>
+        <li class="faq-card">
+          <div class="faq-card-head">
+            <h3 class="faq-card-title">Как это работает?</h3>
+            <img src="./svg/service-list.svg" class="faq-list-scg">
+          </div>
+          <div class="faq-card-main">
+            <span class="faq-answer">Некоторые блокчейны используют алгоритм Proof 
+              of Stake (PoS) и его вариации (например, Delegated PoS, Liquid PoS, 
+              Proof of Staked Authority). В отличие от Proof of Work (PoW), где сеть 
+              поддерживают майнеры, здесь валидаторы (держатели криптовалюты) подтверждают 
+              транзакции, блокируя свои монеты в сети.
+            </span>
+          </div>
+        </li>
+        <li class="faq-card">
+          <div class="faq-card-head">
+            <h3 class="faq-card-title">Что такое api?</h3>
+            <img src="./svg/service-list.svg" class="faq-list-scg">
+          </div>
+          <div class="faq-card-main">
+            <span class="faq-answer">API (Application Programming Interface) — 
+              это интерфейс для взаимодействия между программами. Он определяет, 
+              как одна программа может запрашивать данные или функциональность у другой.
+            </span>
+          </div>
+        </li>
+        <li class="faq-card">
+          <div class="faq-card-head">
+            <h3 class="faq-card-title">Как расчитывается энергия?</h3>
+            <img src="./svg/service-list.svg" class="faq-list-scg">
+          </div>
+          <div class="faq-card-main">
+            <span class="faq-answer">Энергия рассчитывается 
+              как сумма активности пользователей и скорости транзакций, умноженная 
+              на коэффициент стабильности работы. Чем больше транзакций, 
+              выше вовлечённость пользователей и стабильнее сайт, тем выше его "энергия".
+            </span>
+          </div>
+        </li>
+      </ul>
     </main>
     <footer class="footer">
       <div class="footer-main">

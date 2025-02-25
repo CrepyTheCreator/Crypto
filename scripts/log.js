@@ -69,3 +69,41 @@ document.querySelectorAll('.go-ref').forEach(button => {
       }, 500);
   });
 });
+
+document.querySelectorAll('.go-api').forEach(button => {
+  button.addEventListener('click', function (event) {
+      event.preventDefault();
+      const main = document.querySelector('.main');
+      main.classList.add('hidden');
+
+      setTimeout(() => {
+          window.location.href = "api.html"; // Путь до новой страницы
+      }, 500);
+  });
+});
+
+document.querySelectorAll('.go-faq').forEach(button => {
+  button.addEventListener('click', function (event) {
+      event.preventDefault();
+      const main = document.querySelector('.main');
+      main.classList.add('hidden');
+
+      setTimeout(() => {
+          window.location.href = "faq.html"; // Путь до новой страницы
+      }, 500);
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll(".faq-card").forEach(card => {
+      card.addEventListener("click", function () {
+          this.classList.toggle("faq-card-active");
+
+          const svgElement = this.querySelector(".faq-list-scg");
+          const mainElement = this.querySelector(".faq-card-main");
+
+          if (svgElement) svgElement.classList.toggle("faq-list-scg-active");
+          if (mainElement) mainElement.classList.toggle("faq-card-main-active");
+      });
+  });
+});

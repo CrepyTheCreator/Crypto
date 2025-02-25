@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/log.css">
     <link rel="stylesheet" href="./styles/stacking.css">
-    <link rel="stylesheet" href="./styles/ref.css">
+    <link rel="stylesheet" href="./styles/api.css">
   </head>
   <body class="page">
     <header class="header">
@@ -121,57 +121,26 @@
       </ul>
     </section>
     <main class="main hidden">
-      <h1 class="ref-title" style="grid-area: ref-title;">Реферальная программа</h1>
-      <section class="reg-users" style="grid-area: reg-users;">
-        <div class="reg-content">
-          <span class="reg-title">Registered users</span>
-          <img src="./svg/Hicon/Bold/Group 3.svg">
-        </div>
-        <span class="users-reg-value">112</span>
-      </section>
-      <section class="ref-link" style="grid-area: ref-link;">
-        <h2 class="ref-link-title">Реферальная ссылка</h2>
-        <div class="ref-link-copy">
-          <input type="text" id="ref-link" class="ref-link-input" value="https://ecoforce.com?invite=12345678" disabled>
-          <img src="./svg/vuesax/linear/document-copy.svg" class="ref-link-input-img">
-        </div>
-        <button class="ref-link-btn">
-          <span class="ref-link-btn-text">Скопировать</span>
+      <h2 class="api-title">API</h2>
+      <section class="api-key-sec">
+        <h3 class="api-key-title">API ключ</h3>
+        <input type="text" class="api-key-input">
+        <button class="api-key-btn">
+          Сгенерировать
         </button>
       </section>
-      <section class="promo-ref" style="grid-area: promo-ref;">
-        <h2 class="promo-ref-title">Промокод  для бесплатной энергии</h2>
-        <div class="promo-ref-content">
-          <input type="text" class="promo-ref-input" value="H14D5" disabled>
-          <img src="./svg/vuesax/linear/document-copy.svg" class="ref-promo-input-img">
-          <button class="promo-ref-btn">изменить</button>
-        </div>
-        <span class="promo-ref-limit">лимит <span class="promo-ref-limit-value">0/100</span></span>
+      <section class="api-about-sec">
+        <p class="api-about-text">
+          Данный функционал позволяет взаимодействовать с нашим сервисом через API.
+        </p>
+        <p class="api-about-text">
+          Вам доступно управление адресами кошельков, покупка энергии и другие функции.
+        </p>
+        <span class="api-about-text-accent">Вся документация</span>
       </section>
-      <section class="plus-ref" style="grid-area: plus-ref;">
-        <ul class="plus-ref-list">
-          <li class="plus-ref-card">
-            <img src="./svg/dolla.svg">
-            <div class="promo-ref-card-contet">
-              <h3 class="promo-ref-card-title">Получайте 5% от каждой покупки энергии вашим партнёром.</h3>
-              <p class="promo-ref-text">Каждый раз, когда приглашённый вами пользователь приобретает энергию, 5% от её стоимости поступают на ваш баланс.</p>
-            </div>
-          </li>
-          <li class="plus-ref-card">
-            <img src="./svg/calendar.svg">
-            <div class="promo-ref-card-contet">
-              <h3 class="promo-ref-card-title">Зарабатывайте 5% от дохода партнёра в стейкинге.</h3>
-              <p class="promo-ref-text">Если ваш партнёр застейкал TRX, вы будете ежедневно получать 5% от его дохода в энергии, которую он генерирует в стейкинге.</p>
-            </div>
-          </li>
-          <li class="plus-ref-card">
-            <img src="./svg/alram-clock.svg">
-            <div class="promo-ref-card-contet">
-              <h3 class="promo-ref-card-title">Создавайте свой промокод и делитесь им!</h3>
-              <p class="promo-ref-text">Создавайте свой промокод и делитесь им! Ваш партнёр получит бесплатную энергию, а вы станете его реферером и начнёте получать пассивный доход от его активности. Ваш промокод можно использовать 100 раз по умолчанию. Один пользователь может применить только один промокод. Если вам требуется увеличить лимит использований кода, свяжитесь с техподдержкой.</p>
-            </div>
-          </li>
-        </ul>
+      <section class="api-refac-faq go-faq">
+        <span class="api-refac-text">FAQ</span>
+        <img src="./svg/arrow.svg">
       </section>
     </main>
     <footer class="footer">
